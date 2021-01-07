@@ -1,5 +1,11 @@
-def factorial(n):
-    print(n)
-    return n*factorial(n-1)
+import sys
+sys.setrecursionlimit(10000)
 
-factorial(3)
+def factorial(n):
+    if n in [0,1]:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+value = int(input("Enter a number: "))
+print(factorial(value))
