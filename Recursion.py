@@ -28,3 +28,4 @@ def powerOfTwo(n):
         return power*2
 
 print(powerOfTwo(4))
+
