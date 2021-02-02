@@ -12,7 +12,7 @@ class Graph:
         queue = [vertex] #using list as queue
 
         while queue:
-            deVertex = queue.pop(0)
+            deVertex = queue.pop(0) #this will remove first element from the list
             print(deVertex)
             for adjacentVertext in self.gdict[deVertex]:
                 if adjacentVertext not in visitedV:
